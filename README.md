@@ -1,6 +1,9 @@
 # Profiler
 An automatic, instrumented CPU profiler. This profiler works by hooking into the prolog and epilog of each function, and inserting a small, lightweight bit of code that times each tree and builds a function hierarchy. The function tree is then printed when the program exits.
 
+# Requirements
+Must be an x86 program with access to windows functions through Windows.h
+
 # How to Integrate
 Simply include the source files in your project. For the profiler to run successfully, optimizations must be turned off for Profiler.cpp, though they can be turned on for the rest of the program. /GH and /Gh compiler flags must be set for every compilation unit EXCEPT Profiler.cpp.
 
