@@ -11,4 +11,4 @@ Simply include the source files in your project. For the profiler to run success
 The profiler is incredibly simple to use and requires no integration, however it prevents whole program optimization and adds overhead to every function it is a part of. Generally, the profiler will only work effectively with relatively small codebases.
 
 # Future Improvements
-JSON serialization is the first improvement I'd like to make. Additionally, adding the fraction of total time taken, as well as real time taken would be good, simple improvements. Finally, if possible I'd like to reduce the profiler's footprint.
+The function tree doesn't clean up after itself. This should be fixed soon. JSON serialization is the first improvement I'd like to make. Additionally, adding the fraction of total time taken, as well as real time taken would be good, simple improvements. Finally, if possible I'd like to reduce the profiler's footprint. 
